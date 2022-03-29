@@ -3,13 +3,13 @@
         --fuentePrincipal: 'Poppins', sans-serif;
         --fuenteSecundaria: 'Montserrat', sans-serif;
         
-        --primario: rgb(42,62,205);
-        --primarioOscuro: rgb(28,46,182);
-        --primarioTextos: rgb(24,46,94);
-        --primarioClaro: rgb(217,225,254);
-        --amarilloClaro: rgb(254,247,216);
-        --gris: rgb(88,100,127);
-        --grisClaro: rgb(238,243,255);
+        --primario: rgb(42, 62, 205);
+        --primarioOscuro: rgb(28, 46, 182);
+        --primarioTextos: rgb(24, 46, 94);
+        --primarioClaro: rgb(217, 225, 254);
+        --amarilloClaro: rgb(254, 247, 216);
+        --gris: rgb(88, 100, 127);
+        --grisClaro: rgb(238, 243, 255);
         --blanco: #ffffff;
         --negro: #000000;
     }
@@ -109,7 +109,7 @@
         font-size: 2.2rem;
     }
      /* Boton */
-     .boton {
+    .boton {
         color: var(--blanco);
         background-color: var(--primarioOscuro);
         background: linear-gradient(90deg, var(--primario) 0%, var(--primarioOscuro)  100%);
@@ -120,18 +120,30 @@
         border-style: none;
         cursor: pointer;
         transition: all .5s ease;
-     }
+    }
     
-     .boton:hover {
+    .boton:hover {
         color: var(--primario);
         background: rgba(28,46,182,.5);
         box-shadow: 0 .2rem 1rem .5rem rgba(28,46,182,.3);
-     }
+    }
     
-     .navegacion-link:hover{
+    .navegacion-link:hover{
         color: var(--primario);
-     }
+    }
     
-     /* Seccion 1 */
-    
+    /* Seccion 1 */
+
+    /* Banner 1 */
+    .banner1 {
+        background: url(../img/banner1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 192rem;
+        width: 192rem;
+        height: 133.5rem;
+        margin: 0 auto;
+        
+    }
+        
 </style>
