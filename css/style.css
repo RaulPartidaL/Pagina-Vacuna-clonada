@@ -436,4 +436,354 @@
         line-height: 3.5rem;
     }
     
+    /* Banner2 */
+    .banner2 {
+        background: url(../img/banner2.png);
+        background-size: 84.8rem 87rem;
+        background-repeat: no-repeat;
+        background-position: 0rem 30.8rem;
+        background-color: var(--blanco);
+    
+        max-width: 192rem;
+        width: 192rem;
+        height: 117.8rem;
+        margin: 0 auto;
+    
+        position: relative;
+    }
+    
+    .banner2 .adorno-triangulo {
+        position: absolute;
+        top: 2rem;
+        bottom: auto;
+        left: 0rem;
+        right: auto;
+        transform: scaleX(-1);
+        z-index: 1;
+        width: 80.6rem;
+    }
+    
+    .banner2-contenido {
+        width: 107.2rem;
+        
+        margin: 0 0 0 84.8rem;
+        padding: 16rem;
+    }
+    
+    .banner2-intro-texto{
+        font-size: 2rem;
+        line-height: 4rem;
+        letter-spacing: 0.15rem;
+        word-spacing: .3rem;
+        margin: 3rem 4rem 0 0; 
+    }
+    
+    .menu-acordeon {
+        padding: 2rem 2rem 4rem 2.5rem;
+        width: 80rem;
+        min-height: 66.6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        margin-top: 4rem;
+        overflow: hidden;
+    }
+    
+    .acordeon-seccion {
+        border: solid #fafaff;
+        border-radius: 1.5rem;
+        border-width: .2rem;
+        background-color: var(--blanco);
+        transition: box-shadow .5s ease;
+        width: 64rem;
+    }
+    
+    .acordeon--seccion__titulo {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        font-size: 2rem;
+        color: var(--primarioTextos);
+        padding: 2rem 4rem;
+    }
+    
+    .acordeon-seccion-titulo .icono-fondo {
+        background-color: var(--primarioClaro);
+        border-radius: 1rem;
+        box-shadow: unset;
+        transition: box-shadow .5s ease;
+    }
+    .acordeon-label {
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .acordeon-label::before {
+        content: "";
+        position: absolute;
+        cursor: pointer;
+        top: -2rem;
+        bottom: -2rem;
+        right: -25rem;
+        left: -8rem;
+        
+    }
+    
+    .acordeon-label:after {
+        content: "";
+        position: absolute;
+        background-color: var(--primarioClaro);
+        border: solid var(--blanco);
+        border-radius: .8rem;
+        border-width: .2rem;
+        background-image: url(../img/arrow.svg);
+        background-size: 1.071rem .927rem;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+        width: 2.5rem;
+        height: 2.7rem;
+    
+        top: auto;
+        bottom:  auto;
+        left: 47rem;
+        right: auto;
+    
+        transition: all 0.4s ease;
+    }
+    
+    .acordeon-contenido {
+        padding: 0rem 8rem 4rem 10rem;
+        display: none;
+    }
+    
+    .acordeon-input {
+        display: none;
+    }
+    .acordeon-input:checked ~ .acordeon--seccion > .acordeon--contenido {
+        display: block;
+    }
+    
+    .acordeon-input:checked ~ .acordeon--seccion > .acordeon--seccion__titulo > .acordeon--label:after {
+        transform: translateY(-50%) rotate(0.5turn);
+        top: 2rem;
+        box-shadow: 0 -.8rem 2rem .2rem rgba(217,225,254,.8);
+    }
+    
+    .acordeon-input:checked ~ .acordeon--seccion {
+        box-shadow: 0 1.5rem 2.5rem .4rem rgba(217,225,254,.8);
+        border: unset;
+    }
+    
+    .acordeon-input:checked ~ 
+    .acordeon-seccion > 
+    .acordeon-seccion-titulo > 
+    .icono-fondo {
+        box-shadow: 0 1.5rem 2rem .2rem rgba(217,225,254,.8);
+    }
+    
+    /* banner3 */
+    .banner3 {
+        max-width: 192rem;
+        width: 192rem;
+        height: 131.6rem;
+        background-color: var(--blanco);
+        margin: 0 auto;
+    
+        background-image: url(../img/banner3.png);
+        background-repeat: no-repeat;
+        background-size: 84.8rem 86.3rem;
+        background-position: 107.25rem 45.3rem;
+    
+        position: relative;
+    }
+    
+    .banner3 .adorno-triangulo {
+        position: absolute;
+        top: 10rem;
+        bottom: auto;
+        left: auto;
+        right: 0;
+    }
+    
+    .banner3-intro {
+        width: 107.2rem;
+        height: 50rem;
+        padding: 16rem;
+    }
+    
+    .banner3-intro-titulo {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+    
+    .banner3-intro-texto {
+        font-size: 2rem;
+        line-height: 4rem;
+        letter-spacing: 0.1rem;
+        word-spacing: .4rem;
+        padding-right: 2rem;
+    
+    }
+    
+    .banner3-contenido {
+        height: 66.6rem;
+        width: 107.25rem;
+        margin-top: 15rem;
+        overflow: visible;
+    }
+    
+    .banner3-items {
+        height: 66.6rem;
+        width: 76.8rem;
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3.5rem;
+        overflow: visible;
+    }
+    
+    .banner3-item {
+        width: 100%;
+        max-width: 36.4rem;
+        height: 100%;
+        
+        border: solid #fafaff;
+        border-radius: 2rem;
+        border-width: .3rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 5rem;
+        padding: 0 3rem;
+    
+        transition: box-shadow 0.5s ease;
+    }
+    
+    .banner3-item:hover {
+        border: unset;
+        box-shadow: 0 2rem 3rem .4rem rgba(217,225,254,.8);
+        padding: 0 3.3rem;
+    }
+    
+    .banner3-item-info .icono-fondo {
+        box-shadow: none;
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 1.2rem;
+        background-color: var(--primarioClaro);
+        transition: box-shadow .5s ease;
+    }
+    
+    .banner3-item:hover .icono-fondo {
+        box-shadow: 0 1.5rem 2rem .2rem rgba(217,225,254,.8);
+    }
+    
+    .banner3-item-info {
+        display: flex;
+        column-gap: 3rem;
+    }
+    
+    .banner3-item-titulo {
+        font-size: 3rem;
+        color: var(--primarioTextos);
+    }
+    
+    .banner3-item .boton {
+        background: none;
+        background-color: var(--primarioClaro);
+        color: var(--primario);
+        box-shadow: unset;
+    
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    
+        transition: all 0.5s ease;
+    }
+    
+    .banner3-item:hover .boton{
+        background-color: var(--primario);
+        color: var(--blanco);
+        box-shadow: 0 1.5rem 2rem .2rem rgba(217,225,254,.8);
+    }
+    
+    /* Footer */
+    .footer {
+        background-color: #EEF3FF;
+        width: 100%;
+        min-width: 192rem;
+        margin-top: 20rem;
+    }
+    
+    .footer-contenedor {
+        width: 192rem;
+        max-width: 192rem;
+        height: 49rem;
+        margin: 0 auto;
+        padding: 8.6rem 18rem 3.5rem 18rem;
+    
+        display: flex;
+        justify-content: space-between;
+        
+        background-image: url(../img/triangulo3.png);
+        background-repeat: no-repeat;
+        background-size: 36.277rem 18.139rem;
+        background-position: 137.8rem 30.9rem;
+    }
+    
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+    
+    .footer-goal {
+        width: 27.5rem;
+        height: 18rem;
+    }
+    
+    .footer-goal-title {
+        color: var(--primario);
+        font-size: 4rem;
+    }
+    
+    .footer-goal-text {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        font-size: 2rem;
+        line-height: 6rem;
+    }
+    
+    .Right-top {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 12.5rem;
+    }
+    
+    .footer-right .footer-list {
+        list-style-type: none;
+    }
+    
+    .footer-right-title {
+        font-size: 3rem;
+    }
+    
+    .Right-bottom {
+        display: flex;
+        column-gap: 4rem;
+        justify-content: flex-end;
+    }
 </style>
