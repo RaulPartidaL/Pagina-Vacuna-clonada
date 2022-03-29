@@ -12,6 +12,145 @@
         --grisClaro: rgb(238, 243, 255);
         --blanco: #ffffff;
         --negro: #000000;
+1
+<style>
+2
+    :root {
+3
+        --fuentePrincipal: 'Poppins', sans-serif;
+4
+        --fuenteSecundaria: 'Montserrat', sans-serif;
+5
+        
+6
+        --primario: rgb(42, 62, 205);
+7
+        --primarioOscuro: rgb(28, 46, 182);
+8
+        --primarioTextos: rgb(24, 46, 94);
+9
+        --primarioClaro: rgb(217, 225, 254);
+10
+        --amarilloClaro: rgb(254, 247, 216);
+11
+        --gris: rgb(88, 100, 127);
+12
+        --grisClaro: rgb(238, 243, 255);
+13
+        --blanco: #ffffff;
+14
+        --negro: #000000;
+15
+    }
+16
+    
+17
+    html {
+18
+        font-size: 62.5%;
+19
+        box-sizing: border-box;
+20
+        zoom: 95%;
+21
+    }
+22
+    
+23
+    *, *:before, *:after {
+24
+        box-sizing: inherit;
+25
+        margin: 0;
+26
+        padding: 0;
+27
+    }
+28
+    
+29
+    /* Globales */
+30
+    body {
+31
+        font-size: 1.8rem;
+32
+        color: var(--gris);
+33
+        background-color: var(--blanco);
+34
+        line-height: 1.5;
+35
+        font-family: var(--fuenteSecundaria);
+36
+        
+37
+    }/* 1rem = 10px */
+38
+    
+39
+    p {
+40
+        font-family: var(--fuentePrincipal);
+41
+    }
+42
+    
+43
+    a {
+44
+        text-decoration: none;
+45
+        color: inherit;
+46
+    }
+47
+    
+48
+    img {
+49
+        width: 100%;
+50
+    }
+51
+    
+52
+    h1, h2, h3 {
+53
+        font-family: var(--fuenteSecundaria);
+54
+        color: var(--primarioTextos);
+55
+    }
+56
+    
+57
+    h2 {
+58
+        font-size: 5rem;
+59
+    }
+60
+    
+61
+    /* Navegacion */
+62
+    .barra-navegación {
+63
+        background-color: rgba(255,255,255,.8);
+64
+        backdrop-filter: blur(.7rem);
+65
+        -webkit-backdrop-filter: blur(.7rem);
+66
+        width: 100%;
+67
+        position: fixed;
+68
+        z-index: 5;
+69
+    }
+
     }
     
     html {
@@ -786,4 +925,5 @@
         column-gap: 4rem;
         justify-content: flex-end;
     }
+
 </style>
