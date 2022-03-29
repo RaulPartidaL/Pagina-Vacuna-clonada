@@ -67,5 +67,22 @@
         position: fixed;
         z-index: 5;
     }
+   
+    .navegación {
+        display: flex;
+        max-width: 192rem;
+        width: 85%;;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem;
+        column-gap: 38rem;
+    }
     
+    .link-logo {
+        color: var(--primario);
+        font-family: var(--fuenteSecundaria);
+        font-weight: bolder;
+        font-size: 3.4rem;
+    }    
 </style>
