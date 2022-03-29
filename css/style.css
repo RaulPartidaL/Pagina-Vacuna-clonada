@@ -166,5 +166,87 @@
         line-height: 4rem;;
     }
     
-     /* iconos banner1 */    
+    /* iconos banner1 */    
+    .iconos {
+        display: flex;
+        column-gap: 8rem;
+        padding: 3.5rem 2rem;
+    }
+    
+    .icono1,
+    .icono2 {
+        max-width: 30rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    
+        font-size: 2rem;
+        color: var(--primarioTextos);
+        word-spacing: 0.1rem;
+    }
+    
+    .icono-fondo {
+        background-color: var(--amarilloClaro);
+        width: 4rem;
+        height: 4rem;
+        border: solid;
+        border-radius: .5rem;
+        border-color: var(--blanco);
+        border-width: .1rem;
+        box-shadow: 0 1.5rem 2rem .2rem rgba(254,247,216,.8);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    /* Seccion de agenda (banner1) */
+    .banner1-agenda {
+        width: 120rem;
+        margin-left: 18rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    
+    }
+    
+    .banner1-agenda .icono-fondo {
+        background-color: var(--primarioClaro);
+        box-shadow: 0 1.5rem 2rem .2rem rgba(217,225,254,.8);
+     }
+    
+    .banner1-agenda-titulo {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 3rem;
+        align-items: center;
+        margin: 0 auto 0 0;
+    }
+    
+    .banner1-agenda-titulo p{
+        font-family: var(--fuenteSecundaria);
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: var(--primarioTextos);
+    }
+    
+    .banner1-agenda-panel {
+        width: 129rem;
+        height: 20rem;
+        border: solid;
+        border-radius: 1.5rem;
+        border-color: var(--blanco);
+        border-width: .1rem;
+        background-color: rgba(255,255,255,.9);
+        -webkit-backdrop-filter: blur(.7rem);
+        backdrop-filter: blur(.7rem);
+        box-shadow: 0 2rem 4rem .1rem rgba(28,46,182,.2);
+        z-index: 1;
+    
+        display: flex;
+        
+    }
 </style>
