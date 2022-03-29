@@ -85,4 +85,28 @@
         font-weight: bolder;
         font-size: 3.4rem;
     }    
+
+        
+    .navegacion--logo {
+        color: var(--primario);
+        font-family: var(--fuenteSecundaria);
+        font-weight: bolder;
+        font-size: 3.4rem;
+    }
+    .navegación-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        column-gap: 4.5rem;
+        margin: auto 0;
+    }
+    
+    .navegacion-link {
+        font-weight: 500;
+        color: var(--gris);
+        font-size: 2.2rem;
+    }
+     /* Boton */
 </style>
