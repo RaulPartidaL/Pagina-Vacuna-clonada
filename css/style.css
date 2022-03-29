@@ -249,4 +249,191 @@
         display: flex;
         
     }
+
+    
+    .agenda-panel-info .icono-fondo {
+        box-shadow: unset;
+        order: -1;
+    }
+    
+    .agenda-categoria {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    
+        font-family: var(--fuentePrincipal);
+        font-weight: 400;
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        color: var(--gris)
+    }
+    
+    .agenda-panel-info {
+        font-family: var(--fuenteSecundaria);
+        color: var(--primarioTextos);
+        font-size: 3.5rem;
+        font-weight: 500;
+    
+        width: 105rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 4rem;
+        column-gap: 3rem;
+    }
+    
+    .agenda-location {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2 ;
+    }
+    
+    .agenda-location-val {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding-left: 5rem;
+        font-family: var(--fuenteSecundaria);
+        font-weight: 600;
+    }
+    
+    .agenda-date {
+        grid-column: 2 / 3;
+        grid-row:  1 / 2;
+    }
+    
+    .agenda-date-val {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding-left: 5rem;
+        font-family: var(--fuenteSecundaria);
+        font-weight: 600;
+    }
+    
+    .agenda-type {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .agenda-type-val {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        padding-left: 5rem;
+        font-family: var(--fuenteSecundaria);
+        font-weight: 600;
+    }
+    
+    .agenda-panel-submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 6rem;
+    }
+    
+    .agenda-panel-submit .boton{
+        font-family: var(--fuentePrincipal);
+        font-size: 2.3rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    
+    /* Marcas */
+    .logos {
+        background-color: var(--blanco);
+        width: 192rem;
+        height: 29.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 192rem;
+        margin: 0 auto;
+    }
+    
+    /* Seccion 2 */
+    
+    .seccion2 {
+        height: 100rem;
+        background-color: var(--blanco);
+        max-width: 192rem;
+        width: 192rem;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .adorno-triangulo {
+        width: 95.7rem;
+        height: 31.8rem;
+        position: absolute;
+        top:0;
+        bottom: auto;
+        right: 0;
+        left: auto;
+       
+    }
+    
+    .seccion2-contenido {
+        width: 158.2rem;
+        height: 95.3rem;
+        padding-top: 12rem;
+    
+    }
+    
+    .seccion2-intro-texto {
+        width: 74.5rem;
+        height: 13rem;
+        padding: 2rem 3rem 2rem 0;
+        font-size: 2rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.1rem;
+        word-spacing: .2rem;
+    }
+    
+    .seccion2-items {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 3rem;
+        margin-top: 8rem;
+    }
+    
+    .seccion2-item {
+        width: 36.4rem;
+        height: 45.8rem;
+        border: solid #fafaff;
+        border-width: .3rem;
+        border-radius: 2rem;
+        padding: 3rem;
+        transition: box-shadow .5s ease;
+    }
+    
+    .seccion2-item:hover {
+        border: unset;
+        box-shadow: 0 2rem 3rem .4rem rgba(217,225,254,.8);
+    }
+    
+    .seccion2-item .icono--fondo {
+        box-shadow: unset;
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 1.2rem;
+        background-color: var(--primarioClaro);
+        transition: box-shadow .5s ease;
+    }
+    
+    .seccion2-item:hover .icono--fondo {
+        box-shadow: 0 1.5rem 2rem .2rem rgba(217,225,254,.8);
+    }
+    
+    .seccion2-item h3 {
+        font-family: var(--fuentePrincipal);
+        font-weight: 400;
+        font-size: 3rem;
+        letter-spacing: .1rem;
+        word-spacing: .2rem;
+        margin: 2rem auto;
+    }
+    
+    .seccion2-item p {
+        line-height: 3.5rem;
+    }
+    
 </style>
