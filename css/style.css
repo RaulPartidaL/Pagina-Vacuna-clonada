@@ -109,4 +109,29 @@
         font-size: 2.2rem;
     }
      /* Boton */
+     .boton {
+        color: var(--blanco);
+        background-color: var(--primarioOscuro);
+        background: linear-gradient(90deg, var(--primario) 0%, var(--primarioOscuro)  100%);
+        padding: 2rem 4rem;
+        border-radius: .8rem;
+        margin: 0;
+        box-shadow: 0 .2rem 1rem .5rem rgba(28,46,182,.3);
+        border-style: none;
+        cursor: pointer;
+        transition: all .5s ease;
+     }
+    
+     .boton:hover {
+        color: var(--primario);
+        background: rgba(28,46,182,.5);
+        box-shadow: 0 .2rem 1rem .5rem rgba(28,46,182,.3);
+     }
+    
+     .navegacion-link:hover{
+        color: var(--primario);
+     }
+    
+     /* Seccion 1 */
+    
 </style>
