@@ -145,5 +145,26 @@
         margin: 0 auto;
         
     }
+
+    .banner1-contenido {
+        width: 98rem;
+        padding: 16rem;
+        padding-top: 35rem;
         
+    }
+    
+     .banner1-contenido-titulo { 
+        font-size: 8rem;
+        line-height: 9rem;
+    }
+    
+     .banner1-contenido-parrafo {
+        padding: 5rem 0;
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.1rem;
+        line-height: 4rem;;
+    }
+    
+     /* iconos banner1 */    
 </style>
